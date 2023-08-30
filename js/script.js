@@ -31,3 +31,12 @@ const addPlaceholder = function (word) {
 };
 
 addPlaceholder(word);
+
+
+//Capture value of letter guessed and clear input for next guess
+guessBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const playerGuess = letter.value;
+    console.log(playerGuess);
+    letter.value = "";
+});
